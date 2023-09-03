@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Fancify Shamcify</title>
+
+	<!-- link to your script file here -->
+	<script src="./fancifymytext.js"></script>
+
+</head>
+
+<body>
+	<h1>Fancify my Text</h1>
+
+
+	<!-- Your UI controls go here -->
+
+	<fieldset>
+		<legend>Text</legend>
+		<textarea id="text" rows="4" cols="30"></textarea>
+	</fieldset>
+
+	<fieldset style="display: flex; flex-direction: column; gap:.5rem;">
+		<legend>Fancify</legend>
+		<button id="biggerButton" onclick="biggerFont()"
+			style="border-radius: .25rem; background-color: #5cb85c; align-self: center; justify-self: center; width: 20vw; padding: 6px 12px; color: white; border-color: #4cae4c;">Bigger</button>
+		<div class="fancy-input-content" color: white; border-color: 4cae4c;>
+			<input id="fancy-input" type="radio" value="FancyShmancy" onchange="fancyHandler(event);" />FancyShmancy
+		</div>
+		<div class="boring-input-content">
+			<input id="boring-input" type="radio" value="BoringBetty" onchange="boringHandler(event);" />BoringBetty
+
+		</div>
+	</fieldset>
+
+	<!-- Add a new button to the HTML with the text "Moo" that, when clicked, uppercases the text in the text area. -->
+	<!-- <div class="moo-btn"> -->
+	<button id="mooButton" onclick="mooHandler()"
+		style="border-radius: .25rem; background-color: #5cb85c; width: 20vw; padding: 6px 12px; color: white; border-color: #4cae4c; margin-top: 2em;">Moo</button>
+	<!-- </div> -->
+
+</body>
+
+</html>
